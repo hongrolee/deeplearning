@@ -13,9 +13,6 @@ Data_set = numpy.loadtxt("../dataset/ThoraricSurgery.csv",delimiter=",")
 X = Data_set[:,0:17]
 Y = Data_set[:,17]
 
-#print(X)
-#print(Y)
-
 model = Sequential()
 model.add(Dense(30, input_dim=17, activation='relu'))
 model.add(Dense(1,activation='sigmoid'))
